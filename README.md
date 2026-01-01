@@ -16,9 +16,7 @@ use pocketmine\plugin\PluginBase;
 class MyMain extends PluginBase {
 
     protected function onEnable() : void {
-        if (!DiscordWebhookAPI::isRegistered()) {
-            DiscordWebhookAPI::register($this);
-        }
+        DiscordWebhookAPI::register($this);
     }
 }
 ```
